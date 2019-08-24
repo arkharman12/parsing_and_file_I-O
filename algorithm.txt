@@ -1,0 +1,27 @@
+Harmanjot Singh
+Professor Andrew Harris
+Computing II
+5 October 2018
+
+								                                Parsing and File I/O Algorithm
+
+•Goals - The main goal of this program is to use the concepts of Parsing(breaking down the code into smaller parts so it can be used by a compiler, interpreter or translator to create an executable program or library) and File I/O(ifstream, ofstream and fstream) in C++ in order to sum the integers of each given line and output the following line’s string that many times separated by commas.
+ 
+•Input - The program takes an input file named “input.txt” which consists of five lines of three different integers followed by a string. 
+
+•Output - The output of this program is to sum the integers of each given line and output the following line’s string that many times separated by commas. But this output will be contained in a new separated file named “output.txt”.
+
+•Steps - Main function():
+	1.Initialize the input stream for “input.txt” file.
+	2.Initialize the output stream for “ouput.txt” file.
+	3.Make sure the input file opens successfully otherwise throw an error message.Preferably do the same thing for output file as well.
+	4.Make a while loop with the getline function as the parameter. This loop will act as the main loop of this program and everything else from now on will stay inside in this loop. So as long as 	there is an input it will continue running.
+	5.Store the number of integers in an array named integers and make a placeholder that will take care of the commas. 
+	6.Send the stream into the array that we just made.
+	7.Make a new for loop which will keep on running until there are three integers in the array.
+	8.Store the text lines in the string text and get the text line with the getline function.
+	9.Create a variable named total which will initialize to zero each time.
+	10.Make a another for loop which will loop through the array for the final total.
+	11.Initialize the output stream and send the text to the output stream to write on the file.
+	12.Make a final for loop of the program. This loop will put the text together with a comma afterwards.
+	13.Finally, outside our main while loop, close the input and output file. 
